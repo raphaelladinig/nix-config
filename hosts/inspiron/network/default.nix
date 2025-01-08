@@ -15,8 +15,8 @@ in
     path = "/etc/NetworkManager/system-connections/CristalloOsttirol.nmconnection";
   };
 
-  # sops.secrets."HTLinn.nmconnection" = {
-  #   sopsFile = "${secretsPath}/HTLinn.nmconnection";
-  #   path = "/etc/NetworkManager/system-connections/HTLinn.nmconnection";
-  # };
+  sops.secrets."HTLinn.nmconnection" = {
+    sopsFile = "${secretsPath}/HTLinn.nmconnection";
+    path = "/etc/NetworkManager/system-connections/HTLinn.nmconnection";
+  };
 }
