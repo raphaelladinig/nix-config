@@ -24,6 +24,7 @@
   boot.loader.grub = {
     efiInstallAsRemovable = true;
     device = "nodev";
+    useOSProber = true;
     efiSupport = true;
   };
 
