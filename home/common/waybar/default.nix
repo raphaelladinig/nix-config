@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, hostName, ... }:
 {
   home.file = {
-    ".config/waybar".source = ./waybar;
+    ".config/waybar".source = ./${hostName};
   };
 
   home.packages = with pkgs; [
