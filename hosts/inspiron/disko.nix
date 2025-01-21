@@ -21,8 +21,8 @@
             content = {
               type = "luks";
               name = "crypted";
+              passwordFile = "/tmp/disk.key";
               settings = {
-                keyFile = "/tmp/disk.key";
                 bypassWorkqueues = true;
                 crypttabExtraOpts = [
                   "fido2-device=auto"
