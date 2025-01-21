@@ -22,7 +22,7 @@
   },
   "wireplumber": {
     "format": "vol {volume}%",
-    "format-muted": "vol muted",
+    "format-muted": "vol {volume}% (muted)",
     "tooltip": false,
   },
   "battery": {
