@@ -82,6 +82,7 @@ in
         ".dotnet"
         ".nuget"
         ".steam"
+        ".factorio"
         ".config/Google"
         ".config/google-chrome"
         ".config/sops"
