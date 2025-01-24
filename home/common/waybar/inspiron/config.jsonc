@@ -28,6 +28,7 @@
   "battery": {
     "format": "bat {capacity}%",
     "format-charging": "bat {capacity}% (charging)",
+    "format-full": "bat full",
     "tooltip": false,
   },
   "custom/separator": {
