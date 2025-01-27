@@ -2,7 +2,6 @@
     <h1>
       <img width="250" src="./docs/logo.png" />
     </h1>
-    <p>This flake contains my NixOS configuration files.</p>
 </div>
 
 ## Hosts
