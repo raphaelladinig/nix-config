@@ -21,7 +21,6 @@
     ../common/audio.nix
     ../common/bluetooth.nix
     ../common/printing.nix
-    ../common/greetd.nix
   ];
 
   boot.loader.grub = {
