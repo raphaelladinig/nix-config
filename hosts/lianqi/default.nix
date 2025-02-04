@@ -18,6 +18,7 @@
     ../common/network.nix
     ../common/audio.nix
     ../common/printing.nix
+    ../common/ly.nix
   ];
 
   boot.loader.grub = {
