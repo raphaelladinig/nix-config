@@ -19,14 +19,8 @@
     ../common/audio.nix
     ../common/printing.nix
     ../common/ly.nix
+    ../common/grub.nix
   ];
-
-  boot.loader.grub = {
-    efiInstallAsRemovable = true;
-    device = "nodev";
-    useOSProber = true;
-    efiSupport = true;
-  };
 
   networking.hostName = "lianqi";
 

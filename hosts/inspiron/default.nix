@@ -22,14 +22,8 @@
     ../common/bluetooth.nix
     ../common/printing.nix
     ../common/ly.nix
+    ../common/grub.nix
   ];
-
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";
-    useOSProber = true;
-    efiSupport = true;
-  };
 
   networking.hostName = "inspiron";
 
