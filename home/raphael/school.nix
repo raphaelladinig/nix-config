@@ -33,6 +33,7 @@ in
 {
   home.packages = with pkgs; [
     dotnet
+    dotnet-ef
     android-studio
   ];
 
