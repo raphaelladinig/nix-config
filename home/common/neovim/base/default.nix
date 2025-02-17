@@ -2,7 +2,6 @@
   imports = [
     ../plugins/dressing
     ../plugins/render-markdown
-    ../plugins/img-clip
     ../plugins/fidget
     ../plugins/oil
     ../plugins/lualine
