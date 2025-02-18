@@ -13,4 +13,20 @@
   environment.systemPackages = with pkgs; [
     platformio
   ];
+  
+  environment.persistence."/persist" = {
+    users.raphael = {
+      directories = [
+        "Android"
+        ".android"
+        ".java"
+        ".jdks"
+        ".gradle"
+        ".platformio"
+        ".dotnet"
+        ".nuget"
+        ".config/Google"
+      ];
+    };
+  };
 }
