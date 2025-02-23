@@ -1,0 +1,24 @@
+{
+  imports = [
+    ./asm
+    ./bash
+    ./c
+    ./cpp
+    ./csharp
+    ./css
+    ./html
+    ./javascript
+    ./json
+    ./lua
+    ./markdown
+    ./nix
+    ./python
+    ./scss
+    ./spell
+    ./svelte
+    ./tailwindcss
+    ./typst
+    ./vue
+    ./xml
+  ];
+}
