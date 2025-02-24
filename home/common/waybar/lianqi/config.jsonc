@@ -2,11 +2,7 @@
   "layer": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": [
-    "network",
-    "custom/separator",
-    "wireplumber",
-  ],
+  "modules-right": ["network", "custom/separator", "wireplumber"],
   "hyprland/workspaces": {},
   "clock": {
     "format": "{:%H:%M - %A %d.%m}",
@@ -25,5 +21,6 @@
   },
   "custom/separator": {
     "format": "|",
+    "tooltip": false,
   },
 }
