@@ -6,6 +6,7 @@
     ../plugins/oil
     ../plugins/lualine
     ../plugins/telescope
+    ../plugins/overseer
     ../plugins/todo-comments
     ../plugins/comment
     ../plugins/conform
