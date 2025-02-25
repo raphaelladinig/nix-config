@@ -7,6 +7,7 @@
     ../plugins/lualine
     ../plugins/telescope
     ../plugins/overseer
+    ../plugins/aerial
     ../plugins/todo-comments
     ../plugins/comment
     ../plugins/conform
