@@ -3,6 +3,7 @@
   imports = [
     ../../plugins/nvim-lspconfig
     ../../plugins/conform
+    ../../plugins/nvim-dap
   ];
 
   programs.neovim = {

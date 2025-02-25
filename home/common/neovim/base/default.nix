@@ -10,6 +10,8 @@
     ../plugins/comment
     ../plugins/conform
     ../plugins/nvim-lint
+    ../plugins/nvim-dap
+    ../plugins/nvim-dap-ui
     ../plugins/nvim-lspconfig
     ../plugins/nvim-cmp
     ../plugins/nvim-surround
