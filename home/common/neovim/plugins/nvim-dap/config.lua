@@ -15,3 +15,9 @@ end)
 vim.keymap.set("n", "<leader>db", function()
   dap.toggle_breakpoint()
 end)
+
+require("cmp").setup.filetype({ "dap-repl", "dapui_watches", "dapui_hover" }, {
+  sources = {
+    { name = "dap" },
+  },
+})
