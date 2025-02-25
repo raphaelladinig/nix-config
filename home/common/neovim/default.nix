@@ -1,7 +1,5 @@
 {
   imports = [
-    ./base
-    ./git
     ./languages/python
     ./languages/lua
     ./languages/nix
@@ -20,6 +18,8 @@
     ./languages/typst
     ./languages/svelte
     ./languages/tailwindcss
+    ./git
+    ./base
   ];
 
   programs.neovim.enable = true;

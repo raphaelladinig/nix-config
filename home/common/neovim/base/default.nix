@@ -1,4 +1,17 @@
 {
+  programs.neovim = {
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+
+    extraLuaConfig = ''
+      ${builtins.readFile ./options.lua}
+      ${builtins.readFile ./keymaps.lua}
+      ${builtins.readFile ./misc.lua}
+    '';
+  };
+
   imports = [
     ../plugins/dressing
     ../plugins/render-markdown
@@ -23,17 +36,4 @@
     ../plugins/nvim-treesitter
     ../plugins/nightfox
   ];
-
-  programs.neovim = {
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-
-    extraLuaConfig = ''
-      ${builtins.readFile ./options.lua}
-      ${builtins.readFile ./keymaps.lua}
-      ${builtins.readFile ./misc.lua}
-    '';
-  };
 }
