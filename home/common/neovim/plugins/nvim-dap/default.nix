@@ -1,7 +1,5 @@
 { pkgs, ... }:
 {
-  imports = [ ../nvim-cmp ];
-
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
       {
@@ -9,7 +7,6 @@
         type = "lua";
         config = builtins.readFile ./config.lua;
       }
-      cmp-dap
     ];
   };
 }

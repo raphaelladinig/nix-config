@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
-  imports = [ ../luasnip ];
+  imports = [
+    ../luasnip
+    ../nvim-lint
+  ];
 
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
@@ -14,6 +17,7 @@
       cmp-path
       cmp-buffer
       cmp-cmdline
+      cmp-dap
       lspkind-nvim
     ];
   };
