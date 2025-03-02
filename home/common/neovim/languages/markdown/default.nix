@@ -4,10 +4,8 @@
     ../../plugins/conform
   ];
 
-  programs.neovim = {
-    extraLuaConfig = ''
-      ${builtins.readFile ./config.lua}
-    '';
+  home.file = {
+    ".config/nvim/lua/languages/markdown.lua".source = ./config.lua;
   };
 
   home.packages = with pkgs; [

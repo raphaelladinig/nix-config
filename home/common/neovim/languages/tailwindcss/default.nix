@@ -4,10 +4,8 @@
     ../../plugins/nvim-lspconfig
   ];
 
-  programs.neovim = {
-    extraLuaConfig = ''
-      ${builtins.readFile ./config.lua}
-    '';
+  home.file = {
+    ".config/nvim/lua/languages/tailwindcss.lua".source = ./config.lua;
   };
 
   home.packages = with pkgs; [

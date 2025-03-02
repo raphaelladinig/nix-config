@@ -1,12 +1,10 @@
 { pkgs, ... }:
 {
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = nightfox-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    nightfox-nvim
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/nightfox.lua".source = ./config.lua;
   };
 }

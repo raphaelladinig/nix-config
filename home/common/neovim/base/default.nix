@@ -1,17 +1,4 @@
 {
-  programs.neovim = {
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-
-    extraLuaConfig = ''
-      ${builtins.readFile ./options.lua}
-      ${builtins.readFile ./keymaps.lua}
-      ${builtins.readFile ./misc.lua}
-    '';
-  };
-
   imports = [
     ../plugins/dressing
     ../plugins/render-markdown
@@ -27,6 +14,7 @@
     ../plugins/nvim-lint
     ../plugins/nvim-dap
     ../plugins/nvim-dap-ui
+    ../plugins/nvim-dap-virtual-text
     ../plugins/nvim-lspconfig
     ../plugins/nvim-cmp
     ../plugins/nvim-surround
@@ -36,4 +24,10 @@
     ../plugins/nvim-treesitter
     ../plugins/nightfox
   ];
+
+  home.file = {
+    ".config/nvim/lua/settings.lua".source = ./settings.lua;
+    ".config/nvim/lua/keymaps.lua".source = ./keymaps.lua;
+    ".config/nvim/lua/misc.lua".source = ./misc.lua;
+  };
 }

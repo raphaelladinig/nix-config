@@ -2,14 +2,12 @@
 {
   imports = [ ../nvim-cmp ];
 
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = nvim-lspconfig;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-      cmp-nvim-lsp
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    nvim-lspconfig
+    cmp-nvim-lsp
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/nvim-lspconfig.lua".source = ./config.lua;
   };
 }

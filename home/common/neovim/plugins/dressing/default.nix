@@ -2,11 +2,11 @@
 {
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = dressing-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
+      dressing-nvim
     ];
+  };
+
+  home.file = {
+    ".config/nvim/lua/plugins/dressing.lua".source = ./config.lua;
   };
 }

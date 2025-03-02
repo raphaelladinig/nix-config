@@ -1,13 +1,11 @@
 { pkgs, ... }:
 {
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = oil-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-      nvim-web-devicons
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    oil-nvim
+    nvim-web-devicons
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/oil.lua".source = ./config.lua;
   };
 }

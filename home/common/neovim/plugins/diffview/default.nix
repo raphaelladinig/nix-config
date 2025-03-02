@@ -3,11 +3,11 @@
 {
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = diffview-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
+      diffview-nvim
     ];
+  };
+
+  home.file = {
+    ".config/nvim/lua/plugins/diffview.lua".source = ./config.lua;
   };
 }

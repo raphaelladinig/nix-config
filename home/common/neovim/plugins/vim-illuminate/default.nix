@@ -2,13 +2,11 @@
 {
   imports = [ ../nvim-treesitter ];
 
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = vim-illuminate;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    vim-illuminate
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/vim-illuminate.lua".source = ./config.lua;
   };
 }

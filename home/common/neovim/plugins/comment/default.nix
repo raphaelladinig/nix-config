@@ -4,12 +4,12 @@
 
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = comment-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
+      comment-nvim
       nvim-ts-context-commentstring
     ];
+  };
+
+  home.file = {
+    ".config/nvim/lua/plugins/comment.lua".source = ./config.lua;
   };
 }

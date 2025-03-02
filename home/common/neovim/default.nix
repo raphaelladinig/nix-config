@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   imports = [
     ./languages/python
@@ -22,5 +24,15 @@
     ./base
   ];
 
-  programs.neovim.enable = true;
+  home.file = {
+    ".config/nvim/init.lua".source = ./init.lua;
+  };
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+  };
 }

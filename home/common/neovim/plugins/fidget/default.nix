@@ -2,11 +2,11 @@
 {
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = fidget-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
+      fidget-nvim
     ];
+  };
+
+  home.file = {
+    ".config/nvim/lua/plugins/fidget.lua".source = ./config.lua;
   };
 }

@@ -6,10 +6,8 @@
     ../../plugins/nvim-dap
   ];
 
-  programs.neovim = {
-    extraLuaConfig = ''
-      ${builtins.readFile ./config.lua}
-    '';
+  home.file = {
+    ".config/nvim/lua/languages/cpp.lua".source = ./config.lua;
   };
 
   home.packages = with pkgs; [

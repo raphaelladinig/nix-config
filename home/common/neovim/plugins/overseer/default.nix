@@ -1,12 +1,10 @@
 { pkgs, ... }:
 {
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = overseer-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    overseer-nvim
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/overseer.lua".source = ./config.lua;
   };
 }

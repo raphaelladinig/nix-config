@@ -2,11 +2,11 @@
 {
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = aerial-nvim;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
+      aerial-nvim
     ];
+  };
+
+  home.file = {
+    ".config/nvim/lua/plugins/aerial.lua".source = ./config.lua;
   };
 }

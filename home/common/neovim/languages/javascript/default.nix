@@ -5,10 +5,8 @@
     ../../plugins/conform
   ];
 
-  programs.neovim = {
-    extraLuaConfig = ''
-      ${builtins.readFile ./config.lua}
-    '';
+  home.file = {
+    ".config/nvim/lua/languages/javascript.lua".source = ./config.lua;
   };
 
   home.packages = with pkgs; [

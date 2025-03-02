@@ -2,14 +2,12 @@
 {
   imports = [ ../nvim-dap ];
 
-  programs.neovim = {
-    plugins = with pkgs.vimPlugins; [
-      {
-        plugin = nvim-dap-ui;
-        type = "lua";
-        config = builtins.readFile ./config.lua;
-      }
-      nvim-nio
-    ];
+  programs.neovim.plugins = with pkgs.vimPlugins; [
+    nvim-dap-ui
+    nvim-nio
+  ];
+
+  home.file = {
+    ".config/nvim/lua/plugins/nvim-dap-ui.lua".source = ./config.lua;
   };
 }
