@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   imports = [
-    ../../plugins/nvim-lspconfig
-    ../../plugins/conform
-    ../../plugins/nvim-dap
+    ../../plugins/1_nvim-lspconfig
+    ../../plugins/1_conform
+    ../../plugins/1_nvim-dap
   ];
 
   home.file = {

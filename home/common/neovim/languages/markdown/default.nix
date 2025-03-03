@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ../../plugins/conform
+    ../../plugins/1_conform
   ];
 
   home.file = {

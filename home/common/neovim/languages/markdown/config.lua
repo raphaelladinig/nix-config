@@ -1,8 +1,8 @@
-vim.g.markdown_recommended_style = 0;
+vim.g.markdown_recommended_style = 0
 
 require("conform").setup({
   formatters_by_ft = {
-    markdown = { "prettier", "injected" },
+    markdown = { "prettier" },
   },
 })
 

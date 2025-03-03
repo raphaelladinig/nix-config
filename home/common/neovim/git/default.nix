@@ -1,6 +1,6 @@
 {
   imports = [
-    ../plugins/gitsigns
-    ../plugins/diffview
+    ../plugins/2_gitsigns
+    ../plugins/2_diffview
   ];
 }
