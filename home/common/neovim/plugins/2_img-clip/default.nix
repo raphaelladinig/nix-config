@@ -3,11 +3,11 @@
 {
   programs.neovim = {
     plugins = with pkgs.vimPlugins; [
-      copilot-lua
+      img-clip-nvim
     ];
   };
 
   home.file = {
-    ".config/nvim/lua/plugins/2_copilot.lua".source = ./config.lua;
+    ".config/nvim/lua/plugins/2_img-clip.lua".source = ./config.lua;
   };
 }

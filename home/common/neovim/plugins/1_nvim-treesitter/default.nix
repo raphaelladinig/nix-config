@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   programs.neovim.plugins = with pkgs.vimPlugins; [
-    nvim-treesitter
     nvim-treesitter.withAllGrammars
     nvim-treesitter-context
     nvim-ts-autotag

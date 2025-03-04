@@ -15,20 +15,16 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "rounded",
-})
-
-vim.diagnostic.config({
-  signs = {
-    text = {
-      [vim.diagnostic.severity.ERROR] = "",
-      [vim.diagnostic.severity.WARN] = "",
-      [vim.diagnostic.severity.INFO] = "",
-      [vim.diagnostic.severity.HINT] = "󰠠",
-    },
-  },
-})
+-- vim.diagnostic.config({
+--   signs = {
+--     text = {
+--       [vim.diagnostic.severity.ERROR] = "",
+--       [vim.diagnostic.severity.WARN] = "",
+--       [vim.diagnostic.severity.INFO] = "",
+--       [vim.diagnostic.severity.HINT] = "󰠠",
+--     },
+--   },
+-- })
 
 local function write_config_template(path)
   local template = [[

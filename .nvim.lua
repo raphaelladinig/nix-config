@@ -4,6 +4,6 @@ local function load_languages(languages)
   end
 end
 
-load_languages({ "nix", "markdown" })
+load_languages({ "nix" })
 
 print("successfully loaded local config")

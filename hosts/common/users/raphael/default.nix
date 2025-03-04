@@ -72,6 +72,7 @@ in
         "notes"
         "dev"
         ".ssh"
+        ".config/github-copilot"
         ".config/google-chrome"
         ".config/sops"
         ".local/share/zoxide"

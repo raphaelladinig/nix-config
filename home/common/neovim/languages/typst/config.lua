@@ -4,12 +4,8 @@ require("conform").setup({
   },
 })
 
-local lspconfig = require("lspconfig")
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-lspconfig.tinymist.setup({
-  capabilities = capabilities,
+require("lspconfig").tinymist.setup({
+  capabilities = require("blink.cmp").get_lsp_capabilities(),
   offset_encoding = "utf-8",
   root_dir = vim.fn.getcwd(),
 })

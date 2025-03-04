@@ -6,7 +6,7 @@
     ../plugins/1_nvim-lint
     ../plugins/1_nvim-dap
     ../plugins/1_nvim-lspconfig
-    ../plugins/1_nvim-cmp
+    ../plugins/1_blink-cmp
     ../plugins/1_nvim-treesitter
     ../plugins/2_dressing
     ../plugins/2_render-markdown

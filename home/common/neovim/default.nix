@@ -1,7 +1,8 @@
 {
   imports = [
     ./core
-    ./git
+    ./git.nix
+    ./ai.nix
     ./languages/python
     ./languages/nix
     ./languages/cpp

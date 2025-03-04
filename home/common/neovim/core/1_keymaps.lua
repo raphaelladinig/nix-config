@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover)
 
 vim.keymap.set("n", "<leader>eh", function()
-  vim.diagnostic.open_float({ border = "rounded" })
+  vim.diagnostic.open_float()
 end)
 vim.keymap.set("n", "<leader>eq", vim.diagnostic.setloclist)
 vim.keymap.set("n", "<leader>ge", vim.diagnostic.goto_prev)
