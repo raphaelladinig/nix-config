@@ -9,11 +9,21 @@ require("lspconfig").tinymist.setup({
   root_dir = vim.fn.getcwd(),
 })
 
+require("lspconfig").ltex_plus.setup({
+  settings = {
+    ltex = {
+      language = "auto",
+    },
+  },
+})
+
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = "typst",
   callback = function()
     vim.wo.wrap = true
     vim.wo.linebreak = true
+    vim.opt_local.spell = true
+    vim.bo.spelllang = "en,de"
 
     vim.keymap.set("n", "<leader>ty", function()
       local file_path = vim.fn.expand("%:p")

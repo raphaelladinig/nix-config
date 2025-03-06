@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ../../plugins/1_conform
+    ../../plugins/1_nvim-lspconfig
   ];
 
   home.file = {
@@ -9,5 +10,6 @@
 
   home.packages = with pkgs; [
     nodePackages.prettier
+    ltex-ls-plus
   ];
 }

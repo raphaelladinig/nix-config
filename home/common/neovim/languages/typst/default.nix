@@ -13,5 +13,6 @@
     typst
     tinymist
     typstyle
+    ltex-ls-plus
   ];
 }
