@@ -13,7 +13,6 @@ in {
     ../../hyprland.nix
     ../../ssh
     ./school.nix
-    ./steam.nix
   ];
 
   sops.secrets.password_raphael = {
