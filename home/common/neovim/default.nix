@@ -18,6 +18,7 @@
     ./languages/xml
     ./languages/typst
     ./languages/svelte
+    ./languages/vue
     ./languages/tailwindcss
   ];
 
