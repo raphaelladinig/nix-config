@@ -20,6 +20,8 @@ local function load_local_config(path)
   end
 end
 
+package.path = package.path .. ";" .. vim.fn.stdpath("config") .. "/lua/modules/?.lua"
+
 load_files(vim.fn.stdpath("config") .. "/lua")
 load_files(vim.fn.stdpath("config") .. "/lua/plugins")
 

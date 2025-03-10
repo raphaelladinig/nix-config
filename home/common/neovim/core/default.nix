@@ -10,7 +10,8 @@ let
   };
 in {
   imports = [
-    ../languages/lua
+    ../modules/lua
+    ../modules/markdown
     ../plugins/0_nightfox
     ../plugins/1_conform
     ../plugins/1_nvim-lint

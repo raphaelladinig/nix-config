@@ -3,23 +3,23 @@
     ./core
     ./git.nix
     ./ai.nix
-    ./languages/python
-    ./languages/nix
-    ./languages/cpp
-    ./languages/csharp
-    ./languages/c
-    ./languages/asm
-    ./languages/javascript
-    ./languages/markdown
-    ./languages/scss
-    ./languages/css
-    ./languages/html
-    ./languages/json
-    ./languages/xml
-    ./languages/typst
-    ./languages/svelte
-    ./languages/vue
-    ./languages/tailwindcss
+    ./modules/python
+    ./modules/nix
+    ./modules/cpp
+    ./modules/csharp
+    ./modules/c
+    ./modules/asm
+    ./modules/javascript
+    ./modules/markdown
+    ./modules/scss
+    ./modules/css
+    ./modules/html
+    ./modules/json
+    ./modules/xml
+    ./modules/typst
+    ./modules/svelte
+    ./modules/vue
+    ./modules/tailwindcss
   ];
 
   home.file = {

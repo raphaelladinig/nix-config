@@ -1,2 +1,2 @@
-dofile(vim.fn.stdpath("config") .. "/lua/languages/lua.lua")
-dofile(vim.fn.stdpath("config") .. "/lua/languages/markdown.lua")
+require("lua").setup()
+require("markdown").setup()
