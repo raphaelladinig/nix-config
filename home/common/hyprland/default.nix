@@ -4,10 +4,7 @@
   ...
 }: {
   home.file = {
-    ".config/hypr/hyprland.conf" = {
-      force = true;
-      source = ./hypr/hyprland.conf;
-    };
+    ".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
     ".config/hypr/vars.conf".source = ./hypr/vars.conf;
     ".config/hypr/binds.conf".source = ./hypr/binds.conf;
     ".config/hypr/scripts".source = ./hypr/scripts;
