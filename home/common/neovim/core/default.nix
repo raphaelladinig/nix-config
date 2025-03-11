@@ -39,7 +39,7 @@ in {
     ".config/nvim/lua/0_settings.lua".source = ./0_settings.lua;
     ".config/nvim/lua/1_keymaps.lua".source = ./1_keymaps.lua;
     ".config/nvim/lua/1_misc.lua".source = ./1_misc.lua;
-    ".config/nvim/lua/2_languages.lua".source = ./2_languages.lua;
+    ".config/nvim/lua/2_default_modules.lua".source = ./2_default_modules.lua;
     ".config/nvim/spell/de.utf-8.spl".source = nvim-spell-de-utf8-dictionary;
     ".config/nvim/spell/de.utf-8.sug".source = nvim-spell-de-utf8-suggestions;
   };
