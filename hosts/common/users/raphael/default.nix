@@ -31,6 +31,7 @@ in {
       "audio"
       "input"
       "networkmanager"
+      "docker"
     ];
 
     openssh.authorizedKeys.keyFiles = [
@@ -39,6 +40,8 @@ in {
 
     shell = pkgs.zsh;
   };
+
+  virtualisation.docker.enable = true;
 
   programs.zsh.enable = true;
 
