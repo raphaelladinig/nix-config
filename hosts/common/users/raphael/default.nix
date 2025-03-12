@@ -61,6 +61,10 @@ in {
   home-manager.users.raphael = import ../../../../home/raphael;
 
   environment.persistence."/persist" = {
+    directories = [
+      "/var/lib/bluetooth"
+      "/var/lib/mysql"
+    ];
     users.raphael = {
       directories = [
         "Desktop"
