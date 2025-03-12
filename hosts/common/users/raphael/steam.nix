@@ -6,6 +6,7 @@
       directories = [
         ".steam"
         ".local/share/Steam"
+        ".factorio"
       ];
     };
   };
