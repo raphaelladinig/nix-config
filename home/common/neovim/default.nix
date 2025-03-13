@@ -20,6 +20,7 @@
     ./modules/svelte
     ./modules/vue
     ./modules/tailwindcss
+    ./modules/spell
   ];
 
   home.file = {

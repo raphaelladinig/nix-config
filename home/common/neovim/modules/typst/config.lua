@@ -12,45 +12,11 @@ function M.setup()
     root_dir = vim.fn.getcwd(),
   })
 
-  require("lspconfig").ltex_plus.setup({
-    settings = {
-      ltex = {
-        language = "en",
-      },
-    },
-  })
-
-  vim.api.nvim_create_user_command("German", function()
-    require("lspconfig").ltex_plus.setup({
-      settings = {
-        ltex = {
-          language = "de",
-        },
-      },
-    })
-
-    vim.bo.spelllang = "de"
-  end, {})
-
-  vim.api.nvim_create_user_command("English", function()
-    require("lspconfig").ltex_plus.setup({
-      settings = {
-        ltex = {
-          language = "en",
-        },
-      },
-    })
-
-    vim.bo.spelllang = "en"
-  end, {})
-
   vim.api.nvim_create_autocmd({ "FileType" }, {
     pattern = "typst",
     callback = function()
       vim.wo.wrap = true
       vim.wo.linebreak = true
-      vim.opt_local.spell = true
-      vim.bo.spelllang = "en"
 
       vim.keymap.set("n", "<leader>ty", function()
         local file_path = vim.fn.expand("%:p")
