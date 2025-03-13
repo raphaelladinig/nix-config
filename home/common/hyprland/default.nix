@@ -7,7 +7,6 @@
     ".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
     ".config/hypr/vars.conf".source = ./hypr/vars.conf;
     ".config/hypr/binds.conf".source = ./hypr/binds.conf;
-    ".config/hypr/scripts".source = ./hypr/scripts;
     ".config/hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
     ".config/hypr/host-specific.conf".source = ./hypr/${hostName}.conf;
   };
