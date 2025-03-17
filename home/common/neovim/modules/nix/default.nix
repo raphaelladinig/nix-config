@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     ../../plugins/1_nvim-lspconfig
     ../../plugins/1_conform

@@ -3,8 +3,7 @@
   lib,
   modulesPath,
   ...
-}:
-{
+}: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
@@ -17,16 +16,16 @@
     "usb_storage"
     "sd_mod"
   ];
-  boot.initrd.kernelModules = [ "dm-snapshot" ];
-  boot.kernelModules = [ "kvm-intel" ];
-  boot.extraModulePackages = [ ];
+  boot.initrd.kernelModules = ["dm-snapshot"];
+  boot.kernelModules = ["kvm-intel"];
+  boot.extraModulePackages = [];
 
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
 
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = ["nvidia"];
 
   networking.useDHCP = lib.mkDefault true;
 
