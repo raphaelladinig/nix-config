@@ -22,9 +22,9 @@ function M.setup()
         local file_path = vim.fn.expand("%:p")
         local pdf_path = vim.fn.expand("%:p:r") .. ".pdf"
 
-        vim.cmd("!typst compile " .. file_path .. " && zathura " .. pdf_path .. " &")
+        vim.cmd("!typst compile --root . " .. file_path .. " && zathura " .. pdf_path .. " &")
 
-        vim.fn.jobstart("typst watch " .. file_path .. " " .. pdf_path)
+        vim.fn.jobstart("typst watch --root . " .. file_path .. " " .. pdf_path)
       end, { noremap = true, silent = true, buffer = true })
     end,
   })
