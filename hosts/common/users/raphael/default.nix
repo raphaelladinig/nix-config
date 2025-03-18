@@ -12,6 +12,7 @@ in {
     ../../sudo.nix
     ../../hyprland.nix
     ../../ssh
+    ../../sops.nix
     ./school.nix
     ./steam.nix
   ];
@@ -81,6 +82,7 @@ in {
         ".config/github-copilot"
         ".config/google-chrome"
         ".config/sops"
+        ".config/syncthing"
         ".local/share/zoxide"
         ".local/share/DaVinciResolve"
         ".local/state/lazygit"

@@ -14,6 +14,7 @@
     ./git.nix
     ./school.nix
     ./ssh.nix
+    ./syncthing.nix
   ];
 
   home = {
