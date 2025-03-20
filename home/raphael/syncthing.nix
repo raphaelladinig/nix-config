@@ -21,8 +21,14 @@ in {
         urAccepted = -1;
       };
       devices = {
-        "inspiron" = {id = "ZK6XBCB-PDML64D-OKWV3QD-EC2LC2W-TGRMLK4-PNVW2A4-BQPPTNO-UXJACQQ";};
-        "lianqi" = {id = "A3TUWX2-GKQM2SE-AAFXP5V-3KHMHAE-LNETRRS-H3HUJYV-PC32SMU-M5VDHAO";};
+        "inspiron" = {
+          id = "ZK6XBCB-PDML64D-OKWV3QD-EC2LC2W-TGRMLK4-PNVW2A4-BQPPTNO-UXJACQQ";
+          autoAcceptFolders = true;
+        };
+        "lianqi" = {
+          id = "A3TUWX2-GKQM2SE-AAFXP5V-3KHMHAE-LNETRRS-H3HUJYV-PC32SMU-M5VDHAO";
+          autoAcceptFolders = true;
+        };
       };
       folders = {
         "notes" = {
