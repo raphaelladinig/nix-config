@@ -39,6 +39,10 @@ in {
           path = "/home/raphael/dev";
           devices = ["inspiron" "lianqi"];
         };
+        "sync" = {
+          path = "/home/raphael/sync";
+          devices = ["inspiron" "lianqi"];
+        };
       };
     };
   };
