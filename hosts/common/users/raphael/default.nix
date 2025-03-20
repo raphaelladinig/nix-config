@@ -83,7 +83,6 @@ in {
         ".config/github-copilot"
         ".config/google-chrome"
         ".config/sops"
-        ".config/syncthing"
         ".local/share/zoxide"
         ".local/share/DaVinciResolve"
         ".local/state/lazygit"
@@ -91,6 +90,7 @@ in {
         ".local/state/wireplumber"
         ".local/share/nvim"
         ".local/state/nvim"
+        ".local/state/syncthing"
       ];
       files = [
         ".zsh_history"
