@@ -78,6 +78,7 @@ in {
         "Videos"
         "notes"
         "dev"
+        "sync"
         ".ssh"
         ".config/github-copilot"
         ".config/google-chrome"
