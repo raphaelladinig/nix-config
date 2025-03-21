@@ -18,8 +18,8 @@ in {
   };
 
   home.file = {
-    ".ssh/id_raphael.pub".source = ../../hosts/common/ssh/id_raphael.pub;
-    ".ssh/id_yubi.pub".source = ../../hosts/common/ssh/id_yubi.pub;
+    ".ssh/id_raphael.pub".source = ../../../hosts/common/ssh/id_raphael.pub;
+    ".ssh/id_yubi.pub".source = ../../../hosts/common/ssh/id_yubi.pub;
   };
 
   sops.secrets.id_raphael = {

@@ -8,6 +8,7 @@
       ssh-to-age
       cryptsetup
       vim
+      nixos-anywhere
     ];
   };
 }

@@ -8,6 +8,8 @@
 
 - [`inspiron`](./hosts/inspiron/README.md)
 - [`lianqi`](./hosts/lianqi/README.md)
+- [`vm`](./hosts/vm/README.md)
+- [`hetzner-cloud`](./hosts/hetzner-cloud/README.md)
 
 ## Users
 

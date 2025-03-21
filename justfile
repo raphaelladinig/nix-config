@@ -2,7 +2,6 @@ default:
   @just --list
 
 rebuild mode='switch' host='${HOSTNAME}':
-  git add *
   sudo nixos-rebuild {{mode}} --flake .#{{host}}
 
 rebuild-boot host='${HOSTNAME}': (rebuild 'boot' host)

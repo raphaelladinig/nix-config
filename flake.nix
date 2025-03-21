@@ -79,6 +79,20 @@
         };
         modules = [./hosts/lianqi];
       };
+      vm = nixpkgs.lib.nixosSystem {
+        pkgs = pkgsFor.x86_64-linux;
+        specialArgs = {
+          inherit inputs outputs;
+        };
+        modules = [./hosts/vm];
+      };
+      hetzner-cloud = nixpkgs.lib.nixosSystem {
+        pkgs = pkgsFor.x86_64-linux;
+        specialArgs = {
+          inherit inputs outputs;
+        };
+        modules = [./hosts/hetzner-cloud];
+      };
     };
   };
 }

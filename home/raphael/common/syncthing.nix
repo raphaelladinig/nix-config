@@ -14,8 +14,6 @@ in {
     enable = true;
     key = ".config/sops-nix/secrets/${hostName}_syncthing-key";
     cert = ".config/sops-nix/secrets/${hostName}_syncthing-cert";
-    overrideDevices = true;
-    overrideFolders = true;
     settings = {
       options = {
         urAccepted = -1;
@@ -29,19 +27,23 @@ in {
           id = "A3TUWX2-GKQM2SE-AAFXP5V-3KHMHAE-LNETRRS-H3HUJYV-PC32SMU-M5VDHAO";
           autoAcceptFolders = true;
         };
+        "hetzner-cloud" = {
+          id = "PIDQDU6-R5DNKS2-GKCKY2N-MEFX4C6-LNSQ6R2-SKJ4M44-WI55H4U-BCZBUAN";
+          autoAcceptFolders = true;
+        };
       };
       folders = {
-        "notes" = {
-          path = "/home/raphael/notes";
-          devices = ["inspiron" "lianqi"];
+        "Notes" = {
+          path = "/home/raphael/Notes";
+          devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
-        "dev" = {
-          path = "/home/raphael/dev";
-          devices = ["inspiron" "lianqi"];
+        "Dev" = {
+          path = "/home/raphael/Dev";
+          devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
-        "sync" = {
-          path = "/home/raphael/sync";
-          devices = ["inspiron" "lianqi"];
+        "Sync" = {
+          path = "/home/raphael/Sync";
+          devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
       };
     };

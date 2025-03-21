@@ -2,7 +2,9 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  inherit (import ../../vars.nix) stateVersion;
+in {
   imports = [
     inputs.sops-nix.homeManagerModules.sops
     ../common/xdg-user-dirs.nix
@@ -10,17 +12,17 @@
     ../common/virtualisation.nix
     ../common/hyprland
     ../common/yubikey.nix
-    ./sops.nix
-    ./git.nix
-    ./school.nix
-    ./ssh.nix
-    ./syncthing.nix
+    (import ./common/sops.nix {})
+    ./common/git.nix
+    ./common/school.nix
+    ./common/ssh.nix
+    ./common/syncthing.nix
   ];
 
   home = {
     username = "raphael";
     homeDirectory = "/home/raphael";
-    stateVersion = "25.05";
+    stateVersion = stateVersion;
   };
 
   programs.home-manager.enable = true;

@@ -12,9 +12,8 @@ in {
     ../../sudo.nix
     ../../hyprland.nix
     ../../ssh
-    ../../sops.nix
-    ./school.nix
-    ./steam.nix
+    ./common/school.nix
+    ./common/steam.nix
   ];
 
   sops.secrets.password_raphael = {
@@ -76,9 +75,9 @@ in {
         "Public"
         "Templates"
         "Videos"
-        "notes"
-        "dev"
-        "sync"
+        "Notes"
+        "Dev"
+        "Sync"
         ".ssh"
         ".config/github-copilot"
         ".config/google-chrome"

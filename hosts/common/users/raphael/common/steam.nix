@@ -1,5 +1,5 @@
 {
-  imports = [../../steam.nix];
+  imports = [../../../steam.nix];
 
   environment.persistence."/persist" = {
     users.raphael = {

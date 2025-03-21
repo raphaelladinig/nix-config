@@ -1,4 +1,6 @@
-{inputs, ...}: {
+{inputs, ...}: let
+  inherit (import ../../vars.nix) stateVersion;
+in {
   imports = [
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
@@ -7,6 +9,7 @@
     inputs.impermanence.nixosModules.impermanence
     ../common/impermanence.nix
     inputs.sops-nix.nixosModules.sops
+    (import ../common/sops.nix {})
     ../common/users/raphael
     ../common/users/root
     (import ../common/system-config.nix {
@@ -14,7 +17,6 @@
     })
     ./network.nix
     ../common/power-management.nix
-    ../common/sops.nix
     ../common/network.nix
     ../common/audio.nix
     ../common/bluetooth.nix
@@ -25,5 +27,7 @@
 
   networking.hostName = "inspiron";
 
-  system.stateVersion = "25.05";
+  boot.loader.grub.useOSProber = true;
+
+  system.stateVersion = stateVersion;
 }
