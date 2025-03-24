@@ -7,6 +7,7 @@
     ./modules/nix
     ./modules/cpp
     ./modules/csharp
+    ./modules/bash
     ./modules/c
     ./modules/asm
     ./modules/javascript
