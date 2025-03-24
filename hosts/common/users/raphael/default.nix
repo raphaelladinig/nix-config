@@ -4,7 +4,7 @@
   inputs,
   ...
 }: let
-  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets";
+  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets/age_raphael";
 in {
   imports = [
     ../../home-manager.nix
@@ -82,7 +82,7 @@ in {
         ".ssh"
         ".config/github-copilot"
         ".config/google-chrome"
-        ".config/sops"
+        ".config/sops-nix"
         ".local/share/zoxide"
         ".local/share/DaVinciResolve"
         ".local/state/lazygit"

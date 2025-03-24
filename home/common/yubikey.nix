@@ -1,5 +1,5 @@
 {inputs, ...}: let
-  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets";
+  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets/age_raphael";
 in {
   sops.secrets.u2f_keys = {
     sopsFile = "${secretsPath}/u2f_keys";

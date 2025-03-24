@@ -3,7 +3,7 @@
   hostName,
   ...
 }: let
-  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets";
+  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets/age_raphael";
 in {
   sops.secrets = {
     "${hostName}_syncthing-cert".sopsFile = "${secretsPath}/${hostName}_syncthing-cert";

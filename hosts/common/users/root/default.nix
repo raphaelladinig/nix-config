@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets";
+  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets/age_raphael";
 in {
   imports = [
     ../../ssh

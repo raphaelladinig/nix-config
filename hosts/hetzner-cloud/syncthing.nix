@@ -3,7 +3,7 @@
   config,
   ...
 }: let
-  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets";
+  secretsPath = "${builtins.toString inputs.nix-secrets}/secrets/age_hetzner-cloud";
   hostName = config.networking.hostName;
 in {
   sops.secrets = {
