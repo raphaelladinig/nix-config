@@ -36,14 +36,35 @@ in {
       folders = {
         "Notes" = {
           path = "/var/lib/syncthing/Notes";
+          versioning = {
+            type = "simple";
+            params = {
+              keep = "7";
+              cleanoutDays = "7";
+            };
+          };
           devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
         "Dev" = {
           path = "/var/lib/syncthing/Dev";
+          versioning = {
+            type = "simple";
+            params = {
+              keep = "7";
+              cleanoutDays = "7";
+            };
+          };
           devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
         "Sync" = {
           path = "/var/lib/syncthing/Sync";
+          versioning = {
+            type = "simple";
+            params = {
+              keep = "7";
+              cleanoutDays = "7";
+            };
+          };
           devices = ["inspiron" "lianqi" "hetzner-cloud"];
         };
       };
