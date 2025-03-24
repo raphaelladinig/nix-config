@@ -77,6 +77,7 @@ in {
         "Videos"
         "Notes"
         "Dev"
+        "Virtual"
         "Sync"
         ".ssh"
         ".config/github-copilot"
