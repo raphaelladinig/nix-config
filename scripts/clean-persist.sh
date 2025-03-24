@@ -1,9 +1,6 @@
 #!/bin/sh
 
-persist_dirs="$PERSIST_DIRS"
-persist_files="$PERSIST_FILES"
-
-persist="$persist_dirs\n$persist_files"
+persist="$PERSIST_DIRS\n$PERSIST_FILES"
 
 unique_dirs=$(echo -e "$persist" | xargs -n 1 dirname | while read -r dir; do
         while [ "$dir" != "/" ]; do
