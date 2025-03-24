@@ -11,7 +11,6 @@ in {
     (modulesPath + "/profiles/qemu-guest.nix")
     inputs.disko.nixosModules.disko
     ./disko.nix
-    inputs.sops-nix.nixosModules.sops
     (import ../common/system-config.nix {
       timezone = "Europe/Vienna";
     })
