@@ -1,3 +1,3 @@
 # Description
 
-vm
+generic vm setup
