@@ -1,4 +1,7 @@
-{
+{config, ...}: let
+  dirs = builtins.concatStringsSep "\n" (builtins.map (i: i.dirPath) config.environment.persistence."/persist".directories);
+  files = builtins.concatStringsSep "\n" (builtins.map (i: i.filePath) config.environment.persistence."/persist".files);
+in {
   boot.initrd.systemd = {
     enable = true;
 
@@ -41,7 +44,11 @@
       "/var/lib/nixos"
       "/var/lib/systemd"
       "/var/log"
-      "/var/lib/sops-nix"
     ];
+  };
+
+  environment.variables = {
+    PERSIST_DIRS = dirs;
+    PERSIST_FILES = files;
   };
 }

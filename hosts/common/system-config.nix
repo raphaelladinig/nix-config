@@ -10,11 +10,6 @@ in {
       "nix-command"
       "flakes"
     ];
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
   };
 
   programs.nix-ld.enable = true;

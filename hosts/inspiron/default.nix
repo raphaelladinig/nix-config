@@ -27,6 +27,12 @@ in {
 
   networking.hostName = "inspiron";
 
+  environment.persistence."/persist" = {
+    directories = [
+      "/var/lib/sops-nix"
+    ];
+  };
+
   boot.loader.grub.useOSProber = true;
 
   system.stateVersion = stateVersion;

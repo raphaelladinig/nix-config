@@ -15,5 +15,10 @@ install host='${HOSTNAME}': (format-disk host)
 update: 
   nix flake update
 
-clean:
+clean: clean-persist collect-garbage
+
+clean-persist:
+  sudo PERSIST_DIRS="$PERSIST_DIRS" PERSIST_FILES="$PERSIST_FILES" ./scripts/clean-persist.sh
+
+collect-garbage:
   sudo nix-collect-garbage -d
