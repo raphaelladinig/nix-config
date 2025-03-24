@@ -13,7 +13,7 @@ git clone git@github.com:raphaelladinig/nix-config.git && cd nix-config
 2. Enter the nix-shell:
 
 ```sh
-nix-shell
+nix develop
 ```
 
 3. Install:
