@@ -48,5 +48,6 @@ in {
     pnpm
     sqlite
     sops
+    docker-compose
   ];
 }
