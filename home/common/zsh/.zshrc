@@ -15,7 +15,7 @@ fi
 eval "$(starship init zsh)"
 
 # history
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
