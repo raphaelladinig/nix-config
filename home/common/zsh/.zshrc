@@ -16,7 +16,7 @@ eval "$(starship init zsh)"
 
 # history
 HISTSIZE=10000
-HISTFILE=~/.zsh_history
+HISTFILE=/persist/home/raphael/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
