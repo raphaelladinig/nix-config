@@ -33,6 +33,7 @@ eval "$(zoxide init zsh)"
 # aliases
 alias v="nvim"
 alias g="lazygit"
+alias notes="cd ~/Notes && v index.txt"
 
 # nnn
 export NNN_OPTS="QHUai"
