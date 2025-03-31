@@ -21,7 +21,7 @@ in {
     ../common/ly.nix
     ../common/grub.nix
   ];
-  
+
   environment.persistence."/persist" = {
     directories = [
       "/var/lib/sops-nix"

@@ -85,10 +85,10 @@ in {
         ".config/sops-nix"
         ".local/share/zoxide"
         ".local/share/DaVinciResolve"
-        ".local/state/lazygit"
         ".local/share/direnv"
-        ".local/state/wireplumber"
         ".local/share/nvim"
+        ".local/state/wireplumber"
+        ".local/state/lazygit"
         ".local/state/nvim"
         ".local/state/syncthing"
       ];
