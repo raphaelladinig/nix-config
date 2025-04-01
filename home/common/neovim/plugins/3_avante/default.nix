@@ -6,6 +6,7 @@
     ../2_copilot
     ../2_render-markdown
     ../2_img-clip
+    ../2_nvim-web-devicons
   ];
 
   programs.neovim = {

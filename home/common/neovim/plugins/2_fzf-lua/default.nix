@@ -1,7 +1,10 @@
 {pkgs, ...}: {
+  imports = [
+    ../2_nvim-web-devicons
+  ];
+
   programs.neovim.plugins = with pkgs.vimPlugins; [
     fzf-lua
-    nvim-web-devicons
   ];
 
   home.file = {
