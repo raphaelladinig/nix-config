@@ -10,5 +10,6 @@
       user.signingkey = "/home/raphael/.ssh/id_yubi.pub";
     };
     signing.format = "ssh";
+    lfs.enable = true;
   };
 }
