@@ -14,6 +14,7 @@
 ## Users
 
 - [`raphael`](./hosts/common/users/raphael/README.md)
+- [`matthias`](./hosts/common/users/matthias/README.md)
 - [`root`](./hosts/common/users/root/README.md)
 
 ## Resources

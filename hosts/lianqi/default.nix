@@ -10,8 +10,9 @@ in {
     ../common/impermanence.nix
     inputs.sops-nix.nixosModules.sops
     (import ../common/sops.nix {})
-    ../common/users/raphael
     ../common/users/root
+    ../common/users/raphael
+    ../common/users/matthias
     (import ../common/system-config.nix {
       timezone = "Europe/Vienna";
     })
