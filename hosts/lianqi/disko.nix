@@ -16,23 +16,11 @@
               mountpoint = "/boot";
             };
           };
-          luks = {
+          root = {
             size = "100%";
             content = {
-              type = "luks";
-              name = "crypted";
-              passwordFile = "/tmp/disk.key";
-              settings = {
-                bypassWorkqueues = true;
-                crypttabExtraOpts = [
-                  "fido2-device=auto"
-                  "token-timeout=10"
-                ];
-              };
-              content = {
-                type = "lvm_pv";
-                vg = "root_vg";
-              };
+              type = "lvm_pv";
+              vg = "root_vg";
             };
           };
         };
