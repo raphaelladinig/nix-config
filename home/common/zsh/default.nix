@@ -43,8 +43,8 @@
         (pkgs.fetchFromGitHub {
           owner = "jarun";
           repo = "nnn";
-          rev = "v5.0";
-          sha256 = "sha256-Hpc8YaJeAzJoEi7aJ6DntH2VLkoR6ToP6tPYn3llR7k=";
+          rev = "v5.1";
+          sha256 = "sha256-+2lFFBtaqRPBkEspCFtKl9fllbSR5MBB+4ks3Xh7vp4=";
         })
         + "/plugins";
     };
