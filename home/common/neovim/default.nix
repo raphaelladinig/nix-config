@@ -83,7 +83,6 @@ in {
       oil-nvim
       overseer-nvim
       render-markdown-nvim
-      vim-illuminate
       typst-preview-nvim
     ];
   };
