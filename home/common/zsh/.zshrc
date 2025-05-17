@@ -1,5 +1,6 @@
 # setup completions
 autoload -U compinit && compinit
+
 # plugins
 if [[ -f "$HOME/.zsh/plugins/zsh-fast-syntax-highlighting/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh" ]]; then
   source "$HOME/.zsh/plugins/zsh-fast-syntax-highlighting/share/zsh/site-functions/fast-syntax-highlighting.plugin.zsh"
