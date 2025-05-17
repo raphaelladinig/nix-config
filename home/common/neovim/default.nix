@@ -80,10 +80,14 @@ in {
       nvim-treesitter-context
       nvim-ts-autotag
       nvim-web-devicons
-      oil-nvim
       overseer-nvim
       render-markdown-nvim
       typst-preview-nvim
+      avante-nvim
+      plenary-nvim
+      nui-nvim
+      blink-cmp-avante
+      nvim-tree-lua
     ];
   };
 

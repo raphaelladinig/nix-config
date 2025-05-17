@@ -1,1 +1,3 @@
-require("render-markdown").setup({})
+require("render-markdown").setup({
+  file_types = { "markdown", "Avante" },
+})

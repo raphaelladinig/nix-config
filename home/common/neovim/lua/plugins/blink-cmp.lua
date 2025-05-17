@@ -13,6 +13,15 @@ require("blink.cmp").setup({
 
   sources = {
     default = { "lsp", "path", "snippets", "buffer" },
+    per_filetype = {
+      AvanteInput = { "avante" },
+    },
+    providers = {
+      avante = {
+        module = "blink-cmp-avante",
+        name = "Avante",
+      },
+    },
   },
 
   completion = {

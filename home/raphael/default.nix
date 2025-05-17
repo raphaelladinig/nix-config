@@ -30,6 +30,5 @@
     pnpm
     sqlite
     docker-compose
-    aider-chat
   ];
 }

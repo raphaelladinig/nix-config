@@ -42,7 +42,6 @@ export NNN_BMS="d:$HOME/Downloads;D:$HOME/Documents/;m:/run/media"
 export NNN_COLORS="4444"
 BLK="0B" CHR="0B" DIR="04" EXE="01" REG="00" HARDLINK="02" SYMLINK="02" MISSING="08" ORPHAN="09" FIFO="02" SOCK="0B" OTHER="06"
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
-
 n ()
 {
     [ "${NNNLVL:-0}" -eq 0 ] || {
@@ -62,3 +61,6 @@ n ()
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# gemini
+export GEMINI_API_KEY=$(cat ~/.config/agenix/GEMINI_API_KEY)

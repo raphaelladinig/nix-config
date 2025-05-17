@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  hostSpec,
+  ...
+}: {
   programs.zsh = {
     enable = true;
 
@@ -50,4 +54,9 @@
     fzf
     zoxide
   ];
+
+  age.secrets.GEMINI_API_KEY = {
+    file = "${hostSpec.secretsPath}/GEMINI_API_KEY.age";
+    path = ".config/agenix/GEMINI_API_KEY";
+  };
 }
