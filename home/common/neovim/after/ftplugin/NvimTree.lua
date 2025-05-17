@@ -1,8 +1,0 @@
-vim.keymap.set("n", "<leader>a+", function()
-  local tree_ext = require("avante.extensions.nvim_tree")
-  tree_ext.add_file()
-end)
-vim.keymap.set("n", "<leader>a-", function()
-  local tree_ext = require("avante.extensions.nvim_tree")
-  tree_ext.remove_file()
-end)
