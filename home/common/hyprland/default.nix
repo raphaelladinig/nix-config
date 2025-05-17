@@ -33,13 +33,4 @@
     ../gtk.nix
     ../zen-browser
   ];
-
-  xdg = {
-    mimeApps = {
-      enable = true;
-      defaultApplications = {
-        "application/pdf" = ["org.pwmt.zathura.desktop"];
-      };
-    };
-  };
 }
