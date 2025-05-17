@@ -12,6 +12,7 @@ in {
     ../../../sudo.nix
     ../../../hyprland.nix
     ../../../ssh
+    ../../../steam.nix
   ];
 
   userSpec.raphael = {
@@ -80,6 +81,7 @@ in {
         ".local/share/DaVinciResolve"
         ".local/share/direnv"
         ".local/share/nvim"
+        ".local/share/Steam"
         ".local/state/wireplumber"
         ".local/state/lazygit"
         ".local/state/nvim"
